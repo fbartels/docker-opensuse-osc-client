@@ -16,5 +16,7 @@ followed by
 to enter the container. As OSC is already installed you are now able to interact with [OBS](https://build.opensuse.org/).
 
 
+WIP: interact with osc from the host:
+alias osc='docker run --rm --tty --interactive --volume $PWD:/osc-workdir --volume $HOME/.config/osc/oscrc:/.config/osc/oscrc --user $(id -u):$(id -g) fbartels/docker-opensuse-osc-client'
 
 
